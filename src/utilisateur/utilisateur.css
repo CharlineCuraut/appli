@@ -1,0 +1,109 @@
+.liste_contacts{
+    min-width: 100px;
+    width: 300px;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+/*-------------------------------AMI----------------------------*/
+
+.ami, .amiV2{
+    /* height: 80px; */
+    height : auto;
+    width: 90%;
+    border-radius: 20px 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.ami {
+    background: linear-gradient(rgb(159, 201, 246), white);
+}
+
+.amiV2{
+    background: linear-gradient(rgb(0, 45, 71), rgb(63, 132, 206));
+}
+
+.ami:hover{
+    transform: scale(1.05);
+}
+
+.nomAmi{
+    text-align: left;
+    line-height: 2px;
+}
+
+.pdpAmi, .pdpAmiV2{
+    margin: 10px;
+    height: 40px;
+    min-width: 40px;
+    width: 40px;
+    border: solid;
+    border-radius: 50% 50%;
+    text-align: center;
+    padding: 5px;
+}
+
+.pdpAmi{
+    background-color: white;
+}
+
+.pdpAmiV2{
+    color: white;
+}
+
+.etatConnecte {
+    color: rgb(6, 154, 25);
+    font-size: small;
+    font-style: italic;
+}
+
+.etatDeconnecte {
+    color: rgb(180, 0, 0);
+    font-size: small;
+    font-style: italic;
+}
+
+/*------------------------------PROFIL-------------------------------*/
+
+.titre_page, .titre_pageV2{
+    margin: 3px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titre_page {
+    background: linear-gradient(rgb(159, 201, 246), white, rgb(159, 201, 246));
+    box-shadow: 2px 2px 2px;
+}
+
+.titre_pageV2{
+    background: linear-gradient(rgb(0, 45, 71), rgb(78, 163, 255), rgb(0, 45, 71));
+    color : black;
+    box-shadow: 2px 2px 2px;
+}
+
+    .titre_page i, .titre_pageV2 i{
+        border: solid;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        padding: 10px;
+    }
+
+    .titre_page i{
+        background-color: white;
+        
+    }
+
+    .titre_pageV2 i, .titre_pageV2 div{
+        color : white;
+    }
+

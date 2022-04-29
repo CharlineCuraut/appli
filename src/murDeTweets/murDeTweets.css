@@ -1,0 +1,28 @@
+/*-------------------------------------------------------CORPS---------------------------------------------------------*/
+.corps, .corpsV2{
+    margin-top: 200px;
+    background-attachment: fixed;
+    background-position: top 200px right 0px;
+    display: flex;
+    height: calc(100vh - 200px);
+}
+
+.corps {
+    background: linear-gradient(white,rgb(159, 201, 246));
+}
+
+.corpsV2{
+    background: linear-gradient(rgb(0, 45, 71),rgb(78, 163, 255));
+    color: white;
+}
+
+.stats{
+    text-align : center;
+    border-right: solid;
+    border-right-color: grey;
+    border-right-width: 2px;
+    border-right-style: dotted;
+    min-width: 100px;
+    width: 300px;
+    overflow-x: hidden;
+}
