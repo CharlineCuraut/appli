@@ -12,15 +12,15 @@ class Friends {
           if (err){
             reject(err)
           } else {
-            resolve(newDoc.userid1)
+            resolve(newDoc._id)
           }
         })
-    });
+    }); 
   }
 
-  async exists(userid) {
+  exists(userid1, userid2) {
     return new Promise((resolve, reject) => {
-      this.db.find({_id: userid}, (err, docs) => {
+      this.db.find({userid1: userid1, userid2: userid2}, (err, docs) => {
         if (err) {
           reject(err)
         } else {
@@ -32,6 +32,30 @@ class Friends {
         }
       });
     });
+  }
+
+  listeFriends(userid){
+    return new Promise ((resolve, reject) => {
+      this.db.find({userid1:userid}, {userid2:1, _id:0}, (err, docs) => {
+        if(err){
+          reject(err)
+        } else {
+          resolve(docs)
+        }
+      })
+    })
+  }
+
+  delete(userid1, userid2){
+    return new Promise ((resolve, reject) => {
+      this.db.remove ({userid1:userid1, userid2: userid2}, (err, removed) => {
+        if (err){
+          reject(err)
+        } else {
+          resolve(true)
+        }
+      })
+    })
   }
 }
 

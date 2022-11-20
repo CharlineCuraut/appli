@@ -1,0 +1,93 @@
+.divEnregistrement, .divEnregistrementV2 {
+    height: 100vh;
+    min-height: 700px;
+    min-width: 650px;
+    transition: 1s;
+}
+
+.divEnregistrement {
+    background: linear-gradient(white,rgb(255, 216, 100));
+}
+
+.divEnregistrementV2 {
+    background: linear-gradient(rgb(49, 49, 49),rgb(255, 191, 0));
+    color: white;
+}
+
+    .divEnregistrement i, .divEnregistrementV2 i {
+        color: rgb(255, 216, 0);
+        transition: 1s;
+    }
+
+    .divEnregistrement i:hover, .divEnregistrementV2 i:hover {
+        transform: scale(1.1)
+    }
+/*------------------------------------------HEADER-------------------------------------*/
+
+.headerEnregistrement .logo:active {
+    transform: rotateY(360deg)
+}
+
+.enregistrementEcriture{
+    text-align: center;
+}
+
+    .enregistrementEcriture h1 {
+        color: rgb(255, 216, 0);
+        display: inline;
+    }
+
+/* form est le container des boutons et input */
+.enregistrementForm {
+    text-align: center;
+    background-image: url("../images/encadrement.png");
+    background-size: 100% 100%;
+    width: 600px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.enregistrementNoms {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.enregistrementPartie2 {
+    padding: 10px;
+}
+
+    .enregistrementPartie2 label {
+        display: inline-block;
+        width: 25%;
+        text-align: left;
+    }
+
+    .enregistrementPartie2 input {
+        width: 60%;
+    }
+
+.enregistrementBoutons, .enregistrementBoutonsV2 {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+    .enregistrementBoutons button, .enregistrementBoutonsV2 button {
+        box-shadow: 1px 2px 5px;
+        border-radius: 0px;
+    }
+    .enregistrementBoutons button {
+        background: linear-gradient(white,rgb(255, 216, 0));
+        color : black;
+    }
+
+    .enregistrementBoutonsV2 button {
+        background: linear-gradient(black,rgb(255, 216, 0));
+        color: white;
+    }

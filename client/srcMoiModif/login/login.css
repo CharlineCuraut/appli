@@ -1,0 +1,101 @@
+.divConnexion, .divConnexionV2{
+    height: 100vh;
+    min-height: 600px;
+    min-width: 650px;
+    transition: color 1s;
+}
+
+.divConnexion {
+    background: linear-gradient(white,rgb(159, 201, 246));
+}
+
+.divConnexionV2 {
+    background: linear-gradient(rgb(49, 49, 49),rgb(78, 163, 255));
+    color: white;
+}
+
+    .divConnexion i, .divConnexionV2 i {
+        color: rgb(109, 201, 246);
+        transition: 1s;
+    }
+
+    .divConnexion i:hover, .divConnexionV2 i:hover {
+        transform: scale(1.2)
+    }
+/*------------------------------------------HEADER-------------------------------------*/
+.logo {
+    height: 200px;
+    width: 200px;
+    transition: 3s
+}
+
+    .headerConnexion .logo:active{
+        transform: rotateX(360deg)
+    }
+
+.connexionEcriture{
+    text-align: center;
+}
+
+    .connexionEcriture h1 {
+        color: rgb(109, 201, 246);
+        display: inline;
+    }
+
+/* form est le container des boutons et input */
+
+.connexionForm {
+    text-align: center;
+    background-image: url("../images/encadrement.png");
+    background-size: 100% 100%;
+    padding: 5px;
+    width: 600px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* partie label et input (partie supérieure du cadre) */
+
+.connexionPartieUn{
+    align-self: center;
+    width : 80%;
+}
+
+    .connexionPartieUn label {
+        padding: 10px;
+        display: inline-block;
+        width: 40%;
+        text-align: left;
+    }
+
+    .connexionPartieUn input {
+        width: 50%;
+    }
+
+/* partie boutons (partie inférieure du cadre) */
+
+.connexionBoutons, .connexionBoutonsV2{
+    width: 80%;
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+    .connexionBoutons button, .connexionBoutonsV2 button {
+        box-shadow: 1px 2px 5px;
+        border-radius: 0px;
+    }
+
+    .connexionBoutons button{
+        background: linear-gradient(white,rgb(109, 201, 246));
+        color: black;
+    }
+
+    .connexionBoutonsV2 button {
+        background: linear-gradient(black,rgb(109, 201, 246));
+        color: white;
+    }
