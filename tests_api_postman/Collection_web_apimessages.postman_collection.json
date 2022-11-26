@@ -1,0 +1,608 @@
+{
+	"info": {
+		"_postman_id": "04fcde52-55d6-4484-9e04-fa3b366c5dda",
+		"name": "Collection_web_apimessages",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post_create_error_unknown_user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"message\" : \"hello world\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/apimessages/user/EEhM1tBhEFIczcwt/messages",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"apimessages",
+						"user",
+						"EEhM1tBhEFIczcwt",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post_create_error_missing_fields",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"message\" : \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/apimessages/user/EEhM1tBhEFIczcwa/messages",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"apimessages",
+						"user",
+						"EEhM1tBhEFIczcwa",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post_create_success",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"message\" : \"Hello world !\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/apimessages/user/EEhM1tBhEFIczcwa/messages",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"apimessages",
+						"user",
+						"EEhM1tBhEFIczcwa",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put_modify_error_missing_fields_1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"new_message\" : \"\",\n    \"old_message\" : \"Bonjour tout le monde !\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/apimessages/user/EEhM1tBhEFIczcwa/messages",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"apimessages",
+						"user",
+						"EEhM1tBhEFIczcwa",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put_modify_error_missing_fields_2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"new_message\" : \"Hello world !\",\n    \"old_message\" : \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/apimessages/user/EEhM1tBhEFIczcwa/messages",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"apimessages",
+						"user",
+						"EEhM1tBhEFIczcwa",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put_modify_error_unknown_user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"new_message\" : \"Hello world !\",\n    \"old_message\" : \"Bonjour tout le monde !\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/apimessages/user/EEhM1tBhEFIczcwt/messages",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"apimessages",
+						"user",
+						"EEhM1tBhEFIczcwt",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put_modify_error_unknown_message",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"new_message\" : \"Hello world\",\n    \"old_message\" : \"Bonjour tout le monde !\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/apimessages/user/EEhM1tBhEFIczcwa/messages",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"apimessages",
+						"user",
+						"EEhM1tBhEFIczcwa",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put_modify_success",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"new_message\" : \"Bonjour tout le monde !\",\n    \"old_message\" : \"Hello world !\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/apimessages/user/EEhM1tBhEFIczcwa/messages",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"apimessages",
+						"user",
+						"EEhM1tBhEFIczcwa",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_infos_success",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/apimessages/infos",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"apimessages",
+						"infos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_user_infos_error_unknown_user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/apimessages/user/EEhM1tBhEFIczcwt/infos",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"apimessages",
+						"user",
+						"EEhM1tBhEFIczcwt",
+						"infos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_user_infos_success",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/apimessages/user/EEhM1tBhEFIczcwa/infos",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"apimessages",
+						"user",
+						"EEhM1tBhEFIczcwa",
+						"infos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_list_messages_user_error_unknown_user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/apimessages/messages/getNmessages/10/fromUser/EEhM1tBhEFIczcwt",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"apimessages",
+						"messages",
+						"getNmessages",
+						"10",
+						"fromUser",
+						"EEhM1tBhEFIczcwt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_list_messages_user_success",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/apimessages/messages/getNmessages/10/fromUser/franco",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"apimessages",
+						"messages",
+						"getNmessages",
+						"10",
+						"fromUser",
+						"franco"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_message_error_unknown_user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"message\" : \"Bonjour tout le monde !\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/apimessages/user/EEhM1tBhEFIczcwt/messages/AXnJjmgPmmAjrVa0",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"apimessages",
+						"user",
+						"EEhM1tBhEFIczcwt",
+						"messages",
+						"AXnJjmgPmmAjrVa0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_message_error_unknown_message",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"message\" : \"Bonjour tout le monde !\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/apimessages/user/EEhM1tBhEFIczcwa/messages/BXnJjmgPmmAjrVa0",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"apimessages",
+						"user",
+						"EEhM1tBhEFIczcwa",
+						"messages",
+						"BXnJjmgPmmAjrVa0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_message_error_mising_fields",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"message\" : \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/apimessages/user/EEhM1tBhEFIczcwa/messages/AXnJjmgPmmAjrVa0",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"apimessages",
+						"user",
+						"EEhM1tBhEFIczcwa",
+						"messages",
+						"AXnJjmgPmmAjrVa0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_message_success",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"message\" : \"Bonjour tout le monde !\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/apimessages/user/EEhM1tBhEFIczcwa/messages/AXnJjmgPmmAjrVa0",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"apimessages",
+						"user",
+						"EEhM1tBhEFIczcwa",
+						"messages",
+						"AXnJjmgPmmAjrVa0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_list_messages_user_error_no_message",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/apimessages/messages/getNmessages/10/fromUser/franco",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"apimessages",
+						"messages",
+						"getNmessages",
+						"10",
+						"fromUser",
+						"franco"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_list_messages_success",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/apimessages/messages/getNMessages/10",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"apimessages",
+						"messages",
+						"getNMessages",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
